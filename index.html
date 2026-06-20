@@ -58,9 +58,8 @@
           </div>
 
           <div style="padding:24px 20px 0;">
+            <div style="font-size:11px;letter-spacing:.16em;color:#8a90a0;font-weight:800;text-align:center;margin-top:18px;">⏳ MAXSUS TAKLIF TUGASHIGA</div>
             <div style="display:flex;gap:7px;justify-content:center;">
-              <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="dd">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">KUN</div></div>
-              <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="hh">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">SOAT</div></div>
               <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="mm">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">DAQIQA</div></div>
               <div style="flex:1;background:#0c0f14;border:1px solid rgba(255,45,155,.5);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#FF2D9B;"><span data-cd="ss">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">SONIYA</div></div>
             </div>
@@ -112,7 +111,7 @@
       </div>
 <script>
 (function(){
-  var target = new Date('2026-07-02T20:30:00+05:00').getTime();
+  var target = Date.now() + 2*60*1000;
   var p = function(n){ return String(Math.max(0,n)).padStart(2,'0'); };
   function tick(){
     var diff = target - Date.now(), s = Math.max(0, Math.floor(diff/1000));
