@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Masterclass — Voltage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  @keyframes pulseGlow{0%,100%{box-shadow:0 12px 30px rgba(255,45,45,.45),0 0 0 0 rgba(255,45,45,.45);}50%{box-shadow:0 16px 44px rgba(255,45,45,.7),0 0 0 12px rgba(255,45,45,0);}}
+  @keyframes pulseGlowW{0%,100%{box-shadow:0 12px 30px rgba(0,0,0,.35),0 0 0 0 rgba(255,255,255,.5);}50%{box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 0 12px rgba(255,255,255,0);}}
+  @keyframes pulseGlowB{0%,100%{box-shadow:0 12px 30px rgba(31,107,255,.45),0 0 0 0 rgba(31,107,255,.45);}50%{box-shadow:0 16px 44px rgba(31,107,255,.65),0 0 0 12px rgba(31,107,255,0);}}
+  @keyframes pulseGlowV{0%,100%{box-shadow:0 12px 30px rgba(124,58,237,.5),0 0 0 0 rgba(217,70,239,.45);}50%{box-shadow:0 16px 50px rgba(217,70,239,.7),0 0 0 12px rgba(217,70,239,0);}}
+  @keyframes pulseGlowC{0%,100%{box-shadow:0 12px 30px rgba(34,211,238,.45),0 0 0 0 rgba(34,211,238,.5);}50%{box-shadow:0 16px 46px rgba(34,211,238,.65),0 0 0 12px rgba(34,211,238,0);}}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+</style>
+<style>
+  html,body{margin:0;}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:#e7e5df;font-family:'Manrope',sans-serif;}
+</style>
+</head>
+<body>
+<div style="width:390px;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4);background:#060608;color:#fff;position:relative;">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(34,211,238,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.06) 1px,transparent 1px);background-size:34px 34px;pointer-events:none;"></div>
+        <div style="position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(34,211,238,.3),transparent 65%);pointer-events:none;"></div>
+
+        <div style="position:relative;">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid rgba(34,211,238,.18);">
+            <div style="font-size:12px;font-weight:800;letter-spacing:.08em;font-family:'Manrope';">AI_FABRIKA</div>
+            <div style="display:flex;align-items:center;gap:7px;font-size:11px;font-weight:800;letter-spacing:.1em;color:#22d3ee;"><span style="width:8px;height:8px;border-radius:50%;background:#22d3ee;animation:blink 1.4s infinite;box-shadow:0 0 10px #22d3ee;"></span>2–3 IYUL · 20:30</div>
+          </div>
+
+          <div style="padding:24px 20px 0;">
+            <div style="font-family:'Manrope';font-size:12px;letter-spacing:.3em;color:#22d3ee;font-weight:700;">// MASTER-KLASS</div>
+            <h1 style="font-family:'Anton';font-weight:400;font-size:46px;line-height:.92;margin:10px 0 0;text-transform:uppercase;">0 <span style="color:#22d3ee;">→</span> $1000<br><span style="color:#FF2D9B;">AI BILAN</span></h1>
+            <p style="margin:12px 0 0;color:#9aa0ae;font-size:14px;line-height:1.5;">2 kunlik bepul onlayn master-klass. Birinchi daromadingizgacha bo'lgan yo'l.</p>
+          </div>
+
+          <div style="position:relative;margin:18px 20px 0;height:260px;border-radius:14px;overflow:hidden;border:1px solid rgba(34,211,238,.35);">
+            <img src="assets/azizbek.jpg" alt="Azizbek Vafoyev" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 16%;"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(6,6,8,.9));"></div>
+            <div style="position:absolute;left:10px;top:10px;width:18px;height:18px;border-top:2px solid #22d3ee;border-left:2px solid #22d3ee;"></div>
+            <div style="position:absolute;right:10px;top:10px;width:18px;height:18px;border-top:2px solid #22d3ee;border-right:2px solid #22d3ee;"></div>
+            <div style="position:absolute;left:10px;bottom:10px;width:18px;height:18px;border-bottom:2px solid #22d3ee;border-left:2px solid #22d3ee;"></div>
+            <div style="position:absolute;right:10px;bottom:10px;width:18px;height:18px;border-bottom:2px solid #22d3ee;border-right:2px solid #22d3ee;"></div>
+            <div style="position:absolute;left:14px;bottom:14px;">
+              <div style="font-size:9px;color:#22d3ee;font-weight:800;letter-spacing:.14em;">EKSPERT</div>
+              <div style="font-family:'Anton';font-size:24px;line-height:1;">AZIZBEK VAFOYEV</div>
+            </div>
+          </div>
+
+          <div style="padding:20px 20px 0;">
+            <a href="https://t.me/+emZOn-DYJtZiZmYy" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:#22d3ee;color:#04181c;font-family:'Anton';font-size:24px;padding:18px;border-radius:12px;animation:pulseGlowC 2.4s ease-in-out infinite;">BEPUL QATNASHISH →</a>
+            <div style="text-align:center;color:#8a90a0;font-size:13px;margin-top:11px;">Telegramga ulanish uchun bosing ↗</div>
+          </div>
+
+          <div style="padding:24px 20px 0;">
+            <div style="display:flex;gap:7px;justify-content:center;">
+              <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="dd">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">KUN</div></div>
+              <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="hh">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">SOAT</div></div>
+              <div style="flex:1;background:#0c0f14;border:1px solid rgba(34,211,238,.3);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#22d3ee;"><span data-cd="mm">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">DAQIQA</div></div>
+              <div style="flex:1;background:#0c0f14;border:1px solid rgba(255,45,155,.5);border-radius:10px;padding:12px 4px;text-align:center;"><div style="font-family:'Anton';font-size:30px;line-height:1;color:#FF2D9B;"><span data-cd="ss">00</span></div><div style="font-size:8px;color:#8a90a0;letter-spacing:.12em;margin-top:6px;font-weight:700;">SONIYA</div></div>
+            </div>
+          </div>
+
+          <div style="padding:32px 20px 0;">
+            <h2 style="font-family:'Anton';font-size:27px;text-transform:uppercase;margin:0;">NIMA <span style="color:#22d3ee;">BERAMIZ?</span></h2>
+            <div style="display:flex;flex-direction:column;gap:11px;margin-top:16px;">
+              
+                <div style="display:flex;gap:12px;align-items:center;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-left:3px solid #22d3ee;border-radius:10px;padding:14px;">
+                  <div style="font-family:'Anton';font-size:24px;color:#22d3ee;line-height:1;min-width:34px;">01</div>
+                  <div style="font-size:14px;font-weight:600;line-height:1.35;">AI yordamida 0 dan $1000 daromad qilish</div>
+                </div>
+              
+                <div style="display:flex;gap:12px;align-items:center;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-left:3px solid #22d3ee;border-radius:10px;padding:14px;">
+                  <div style="font-family:'Anton';font-size:24px;color:#22d3ee;line-height:1;min-width:34px;">02</div>
+                  <div style="font-size:14px;font-weight:600;line-height:1.35;">Instagram sahifangizni millionlab ko'rishlargacha olib chiqish</div>
+                </div>
+              
+                <div style="display:flex;gap:12px;align-items:center;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-left:3px solid #22d3ee;border-radius:10px;padding:14px;">
+                  <div style="font-family:'Anton';font-size:24px;color:#22d3ee;line-height:1;min-width:34px;">03</div>
+                  <div style="font-size:14px;font-weight:600;line-height:1.35;">AI orqali ilk daromadingizni topish</div>
+                </div>
+              
+                <div style="display:flex;gap:12px;align-items:center;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-left:3px solid #22d3ee;border-radius:10px;padding:14px;">
+                  <div style="font-family:'Anton';font-size:24px;color:#22d3ee;line-height:1;min-width:34px;">04</div>
+                  <div style="font-size:14px;font-weight:600;line-height:1.35;">Kasb va biznesingizga AI'ni integratsiya qilish</div>
+                </div>
+              
+            </div>
+          </div>
+
+          <div style="padding:26px 20px 0;">
+            <div style="border-radius:14px;border:1px solid rgba(255,45,155,.45);background:linear-gradient(135deg,rgba(255,45,155,.18),rgba(34,211,238,.08));padding:24px;text-align:center;">
+              <div style="font-size:36px;line-height:1;">🎁</div>
+              <div style="font-family:'Anton';font-size:23px;text-transform:uppercase;margin-top:8px;">MAXSUS SOVG'A</div>
+              <p style="color:#c4c8d2;font-size:13px;line-height:1.55;margin:8px 4px 0;">Har bir ishtirokchi uchun maxsus sovg'a — faqat jonli efirda ochiladi.</p>
+            </div>
+          </div>
+
+          <div style="padding:32px 20px 36px;text-align:center;">
+            <h2 style="font-family:'Anton';font-size:30px;text-transform:uppercase;margin:0;line-height:.98;">HOZIROQ <span style="color:#22d3ee;">QATNASHING</span></h2>
+            <p style="color:#8a90a0;font-size:13px;margin:8px 0 16px;">Bepul · 2–3 IYUL, 20:30</p>
+            <a href="https://t.me/+emZOn-DYJtZiZmYy" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:#22d3ee;color:#04181c;font-family:'Anton';font-size:23px;padding:18px;border-radius:12px;animation:pulseGlowC 2.4s ease-in-out infinite;">TELEGRAMGA QO'SHILISH →</a>
+            <div style="margin-top:14px;color:#5f6472;font-size:11px;">AI Fabrika · Azizbek Vafoyev</div>
+          </div>
+        </div>
+
+      </div>
+<script>
+(function(){
+  var target = new Date('2026-07-02T20:30:00+05:00').getTime();
+  var p = function(n){ return String(Math.max(0,n)).padStart(2,'0'); };
+  function tick(){
+    var diff = target - Date.now(), s = Math.max(0, Math.floor(diff/1000));
+    var v = { dd:p(Math.floor(s/86400)), hh:p(Math.floor(s%86400/3600)),
+              mm:p(Math.floor(s%3600/60)), ss:p(s%60) };
+    document.querySelectorAll('[data-cd]').forEach(function(el){ el.textContent = v[el.dataset.cd]; });
+  }
+  tick(); setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
